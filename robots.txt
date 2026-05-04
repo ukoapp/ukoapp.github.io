@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
-
+Disallow: /README.md
+Disallow: /readme.md
+Disallow: /readme.html
 Sitemap: https://ukoapp.com/sitemap.xml
+
