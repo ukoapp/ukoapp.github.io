@@ -2,5 +2,8 @@ User-agent: *
 Disallow: /README.md
 Disallow: /readme.md
 Disallow: /readme.html
+
 Sitemap: https://ukoapp.com/sitemap.xml
+Sitemap: https://ukoapp.com/bing-sitemap.xml
+
 
