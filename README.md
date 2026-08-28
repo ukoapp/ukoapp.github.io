@@ -23,15 +23,31 @@ No external JavaScript, no dependencies, no backend.
 
 ## 2. Hosting and Domain
 
-The site is hosted via **GitHub Pages** with:
+The domain **ukoapp.com** uses a clean three‑layer architecture:
 
-- Custom domain: `ukoapp.com`
-- DNS configured at PlanetHoster
-- DNSSEC enabled
-- HTTPS enforced (Let’s Encrypt)
+**Registrar — PlanetHoster**
+PlanetHoster is used exclusively as the domain registrar.  
+It does **not** host the website and does **not** manage SSL certificates.
 
-This ensures full encryption and protection against DNS attacks  
-(spoofing, hijacking, poisoning).
+**DNS — Cloudflare**
+Cloudflare is the authoritative DNS provider for the domain.  
+Configuration includes:
+- DNSSEC enabled  
+- Proxy mode (reverse‑proxy)  
+- Security filtering  
+- Apex domain pointing to GitHub Pages IPs  
+- `www` subdomain pointing to `ukoapp.github.io`  
+- SSL mode set to **Full** during GitHub Pages certificate provisioning  
+- Can be switched to **Full (strict)** once GitHub’s Let’s Encrypt certificate is active
+
+**Hosting — GitHub Pages**
+The static site is hosted on GitHub Pages, which provides:
+- Automatic HTTPS via **Let’s Encrypt**  
+- Certificate renewal every ~90 days  
+- Secure static hosting with no backend  
+- Custom domain support (`ukoapp.com` and `www.ukoapp.com`)
+
+This architecture ensures end‑to‑end encryption, automatic SSL renewal, and strong protection against DNS‑level attacks (spoofing, hijacking, 
 
 ---
 
