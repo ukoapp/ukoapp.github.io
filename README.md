@@ -137,12 +137,19 @@ All application logic (executables, backend, APIs) is hosted elsewhere
 
 ## 8. Product Ownership
 
-**UKOAPP is a product by Creacluster.**  
+UKOAPP is a product by **Creacluster**, currently operating as an informal
+association (“association de fait”).  
+Creacluster serves as the public brand identity, and may later transition to a
+formal business structure (auto‑entreprise) while keeping the same name.
+
 This repository contains only the public landing page.
 
 ---
 
 ## 9. Contact
 
-For any inquiry regarding UKOAPP:  
-**head-ukoapp@creacluster.com**
+For any inquiry regarding UKOAPP:
+
+**head-ukoapp@creacluster.com**  
+*(temporary contact address — will be replaced by a dedicated **@ukoapp.com**
+address for production, Stripe verification, and long‑term branding)*.
